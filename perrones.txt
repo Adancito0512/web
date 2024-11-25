@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Los 4 Perrones. </title>
+    <link rel="stylesheet" href="perrones.css" type="text/css">
+</head>
+<body class="fondo6">
+
+<h1 class="titulo"> LOS 4 PERRONES </h1>
+<br<
+<h2 class="titulo2"> GUARDERIA DE MASCOTAS Y VETERINARIA "LOS PERRONES" </h2>
+<br>
+<center><img src="descarga.jpg" width="700" height="300" alt="Foto de la Guarderia"></center>
+<br>
+
+<p class="subbb"> Los Perrones es un emprendimiento diseñado para brindar una solución a aquellos dueños de mascotas que se enfrentan al dilema de no saber dónde dejarlas cuando salen de viaje. <br> En Los Perrones nos comprometemos a ofrecer el cuidado más especializado y prestigioso para tus animales. Contamos con un equipo de profesionales altamente capacitados que estarán atentos a las necesidades de cada mascota en todo momento. <br>Además, nuestras instalaciones están especialmente diseñadas para garantizar el bienestar de tus mascotas. Disponemos de divertidos circuitos y espacios amplios para que se mantengan activos y en forma durante su estadía. <br>En Los Perrones, nos aseguramos de que cada mascota reciba una alimentación controlada y personalizada, acorde a sus necesidades específicas, para garantizar su salud y felicidad.</p>
+<br><br>
+
+<p class="subbb"> La guarderia "Los Perrones" cuenta con Muchisimas ventajas </p><br>
+<a class="subbb" href="beneficios.html"> <h3> Mas Información </h3>
+
+</body>
+</html> 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> beneficios </title>
+<meta charset="UTF-8">
+   <link rel="stylesheet" href="perrones.css" type="text/css">
+</head>
+<body class="fondo1"> 
+<h1 class="titulo"> VENTAJAS DE "LOS PERRONES" </h1>
+<br>
+<h1 class="titulo2"> Para los perros" </h1>
+<ul class="cam"> 
+<li> <h1> socialización </h1> </li>
+<p> Estar en contacto con otros perros y humanos fomenta el desarrollo de habilidades sociales, reduce la ansiedad y mejora su comportamiento.</p>
+<li> <h1> Ejerció físico </h1> <li> 
+<p>  los perros tienen espacio y tiempo para correr, jugar y mantenerse activos, lo que ayuda a evitar problemas de salud como obesidad o estrés.</p>
+<li> <h1> Estimulación mental </h1> </li> 
+<p> Muchas guarderías ofrecen juegos, actividades y entrenamientos que estimulan el cerebro del perro, manteniéndolo entretenido y feliz.</p>
+<li> <h1> Supervisión profesional </h1> </li> 
+<p> los cuidadores están entrenados para identificar y manejar problemas de comportamiento, así como para garantizar la seguridad y el bienestar de los perros.</p>
+<li> <h1> Rutina establecida </h1> </li>
+<p> Las guarderías suelen seguir horarios regulares para actividades, comidas y descansos, lo que puede ser beneficioso para la estabilidad emocional del perro. </p>
+<li> <h1> Reducción del estrés por separación </h1> </li> 
+<p> Para perros que sufren ansiedad al quedarse solos en casa, la guardería proporciona compañía y actividades que los distraen.</p>
+</ul>
+<center><img src="perross.jpg" width="700" height="300" alt="Perros Happy. "></center>
+<br>
+<h1 class="titulo2"> Para los dueños </h1> 
+<ul class="cam">
+ <li> <h1> Tranquilidad </h1>  </li> 
+<p> Saber que tu perro está cuidado, entretenido y seguro mientras trabajas o realizas otras actividades reduce el estrés.</p>
+<li> <h1>  Ahorro de tiempo </h1>  <li>
+<p> Las guarderías se encargan de las necesidades diarias del perro, como ejercicio y atención, permitiendo que los dueños gestionen mejor su tiempo.</p>
+<li> <h1> Mejor comportamiento en casa </h1> </li>
+<p> Un perro que gasta su energía en la guardería está más tranquilo y menos propenso a desarrollar conductas destructivas en casa.</p>
+<li> <h1> Flexibilidad </h1>  </li> 
+<p> Muchas guarderías ofrecen horarios adaptables, lo que es ideal para dueños con agendas ocupadas o imprevistos.</p>
+<li>  <h1> Entreteniendo adicional </h1>  </li> 
+<p> Algunas guarderías brindan servicios de adiestramiento, ayudando a reforzar la obediencia y el buen comportamiento del perro.</p>
+<li> <h1> Red de contactos </h1>  </li>
+<p> Permite a los dueños conocer a otros amantes de los animales y compartir experiencias o recomendaciones.</p>
+</ul>
+<center><img src="dueños.jpg" width="700" height="300" alt="Perros Happy. "></center>
+<br>
+<a class="camm" href="perrones.html"><h3> Volver.</h3>
+
+</body>
+</html>

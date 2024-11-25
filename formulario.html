@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro - Los 4 Perrones</title>
+    <style>
+        body {
+            background-color: #f2f2f2; /* Fondo gris bajito */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        .menu button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .menu button:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-section h3 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+
+
+    
+        .content1 {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        .content1 button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .content1 button:hover {
+            background-color: #45a049;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>GUARDERÍA DE MASCOTAS Y VETERINARIA "LOS 4 PERRONES"</h1>
+</div>
+
+<div class="menu">
+    <button onclick="window.location.href='perroness.html'">Página Principal</button>
+</div>
+
+<div class="content">
+    <h2>Formulario de Registro</h2>
+
+    <form>
+        <div class="form-section">
+            <h3>1. Datos Generales del Propietario</h3>
+            <div class="form-group">
+                <label for="nombre-propietario">Nombre:</label>
+                <input type="text" id="nombre-propietario" name="nombre-propietario">
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo">
+            </div>
+            <div class="form-group">
+                <label for="tipo-mascota">Tipo de Mascota:</label>
+                <select id="tipo-mascota" name="tipo-mascota">
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>2. Datos de la Mascota</h3>
+            <div class="form-group">
+                <label for="nombre-mascota">Nombre de la Mascota:</label>
+                <input type="text" id="nombre-mascota" name="nombre-mascota">
+            </div>
+            <div class="form-group">
+                <label for="raza">Raza:</label>
+                <input type="text" id="raza" name="raza">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad">
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="Macho">Macho</option>
+                    <option value="Hembra">Hembra</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="peso">Peso:</label>
+                <input type="number" id="peso" name="peso" step="0.01">
+            </div>
+            <div class="form-group">
+                <label for="historial-medico">Historial Médico:</label>
+                <textarea id="historial-medico" name="historial-medico" rows="4"></textarea>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>3. Evaluación de Comportamiento</h3>
+            <div class="form-group">
+                <label for="comportamiento-animales">¿Cómo se comporta la mascota con otros animales?</label>
+                <textarea id="comportamiento-animales" name="comportamiento-animales" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="comportamiento-personas">¿Cómo se comporta la mascota con personas desconocidas?</label>
+                <textarea id="comportamiento-personas" name="comportamiento-personas" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="agresividad">¿La mascota muestra agresividad?</label>
+                <textarea id="agresividad" name="agresividad" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="miedo-ansiedad">¿La mascota tiene miedo o ansiedad en entornos desconocidos?</label>
+                <textarea id="miedo-ansiedad" name="miedo-ansiedad" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="entrenamiento">¿La mascota es fácil de entrenar?</label>
+                <textarea id="entrenamiento" name="entrenamiento" rows="2"></textarea>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>4. Evaluación de Salud</h3>
+            <div class="form-group">
+                <label for="condicion-medica">¿La mascota tiene alguna condición médica crónica?</label>
+                <textarea id="condicion-medica" name="condicion-medica" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="medicacion-diaria">¿La mascota necesita medicación diaria?</label>
+                <textarea id="medicacion-diaria" name="medicacion-diaria" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="alergias-alimentarias">¿La mascota tiene alergias alimentarias?</label>
+                <textarea id="alergias-alimentarias" name="alergias-alimentarias" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="problemas-movilidad">¿La mascota tiene problemas de movilidad?</label>
+                <textarea id="problemas-movilidad" name="problemas-movilidad" rows="2"></textarea>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>5. Hábitos y Necesidades Especiales</h3>
+            <div class="form-group">
+                <label for="frecuencia-comida">¿Cuántas veces al día necesita comer?</label>
+                <input type="number" id="frecuencia-comida" name="frecuencia-comida">
+            </div>
+            <div class="form-group">
+                <label for="frecuencia-necesidades">¿Cuántas veces al día necesita hacer sus necesidades?</label>
+                <input type="number" id="frecuencia-necesidades" name="frecuencia-necesidades">
+            </div>
+            <div class="form-group">
+                <label for="ejercicio-diario">¿La mascota necesita ejercicio diario?</label>
+                <textarea id="ejercicio-diario" name="ejercicio-diario" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="necesidades-especiales">¿La mascota tiene alguna necesidad especial (ej. dieta especial, juguetes específicos)?</label>
+                <textarea id="necesidades-especiales" name="necesidades-especiales" rows="2"></textarea>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>6. Comentarios Adicionales</h3>
+            <div class="form-group">
+                <label for="comentarios-adicionales">¿Hay algo más que el propietario quiera compartir sobre la mascota?</label>
+                <textarea id="comentarios-adicionales" name="comentarios-adicionales" rows="4"></textarea>
+            </div>
+        </div>
+</form>
+</div>
+
+<div class="content1"> <h2>Enviar Formulario</h2> <form action="mailto:adanolvera5417@gmail.com" method="post" enctype="text/plain"> <button type="submit">Enviar Formulario</button> </form></div>
+</body>
+</html>
+
+
+
+

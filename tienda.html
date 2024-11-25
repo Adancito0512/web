@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Artículos para Animales</title>
+    <style>
+        body {
+            background-color: #f2f2f2; /* Fondo gris bajito */
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        .menu button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .menu button:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            font-size: 18px;
+            color: #333;
+        }
+        .product p {
+            color: #666;
+        }
+        .product button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .product button:hover {
+            background-color: #45a049;
+        }
+        .product .actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function addToCart(product, price, img) {
+            let cart = localStorage.getItem('cart');
+            if (cart) {
+                cart = JSON.parse(cart);
+            } else {
+                cart = [];
+            }
+            cart.push({ product, price, img });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${product} añadido al carrito`);
+        }
+    </script>
+</head>
+<body>
+
+<div class="header">
+    <h1>Tienda de Artículos para Animales</h1>
+</div>
+
+<div class="menu">
+    <button onclick="window.location.href='perroness.html'">Página Principal</button>
+    <button onclick="window.location.href='carrito.html'">Ver Carrito</button>
+</div>
+
+<div class="content">
+    <div class="product">
+        <img src="comidape.jpg" alt="pedigree mixto">
+        <h3>pedigree mixto<br><br>$599.99</h3>
+        <p>pedigree para distintas razas de perros y de todos los tamaños.</p>
+        <div class="actions">
+            <button onclick="window.location.href='pago.html'">Comprar Ahora</button>
+            <button onclick="addToCart('pedigree mixto', 599.99, 'comidape.jpg')">Añadir al Carrito</button>
+        </div>
+    </div>
+    <div class="product">
+        <img src="whiskas.jpg" alt="wiskas para gatos">
+        <h3>Whiskas<br><br>$799.99</h3>
+        <p>Para todos los tipos de gatos y razas de gatos.</p>
+        <div class="actions">
+            <button onclick="window.location.href='pago.html'">Comprar Ahora</button>
+            <button onclick="addToCart('Whiskas', 799.99, 'whiskas.jpg')">Añadir al Carrito</button>
+        </div>
+    </div>
+    <div class="product">
+        <img src="conejoss.jpg" alt="casa para conejos.">
+        <h3>Cama para conejos<br><br>$399.99</h3>
+        <p>Cama comoda y bonita para sus conejos.</p>
+        <div class="actions">
+            <button onclick="window.location.href='pago.html'">Comprar Ahora</button>
+            <button onclick="addToCart('Casa para conejos', 399.99, 'conejoss.jpg')">Añadir al Carrito</button>
+        </div>
+    </div>
+    <br>
+    <div class="product">
+        <img src="ropaape.jpg" alt="Ropa para sus perros.">
+        <h3>Ropa para perros<br><br>$499.99</h3>
+        <p>Ropa bonita y comoda para sus mascotas.</p>
+        <div class="actions">
+            <button onclick="window.location.href='pago.html'">Comprar Ahora</button>
+            <button onclick="addToCart('Ropa para perros', 499.99, 'ropaape.jpg')">Añadir al Carrito</button>
+        </div>
+    </div>
+    <div class="product">
+        <img src="animaless.jpg" alt="Camas para mascotas de frutas.">
+        <h3>Casitas comodas de frutas<br><br>$299.99</h3>
+        <p>Casas comodas y bonitas de frutas para su mascota.</p>
+        <div class="actions">
+            <button onclick="window.location.href='pago.html'">Comprar Ahora</button>
+            <button onclick="addToCart('Casitas comodas de frutas', 299.99, 'animaless.jpg')">Añadir al Carrito</button>
+        </div>
+    </div>
+    <div class="product">
+        <img src="gatosss.jpg" alt="Una prenda para gatos morada.">
+        <h3>Sueter Lila para gatos<br><br>$299.99</h3>
+        <p>Es un sueter lila para su gato, es comodo y bonito.</p>
+        <div class="actions">
+            <button onclick="window.location.href='pago.html'">Comprar Ahora</button>
+            <button onclick="addToCart('Sueter Lila para gatos', 299.99, 'gatosss.jpg')">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="jugetess.jpg" alt="Set de jugetes para su mascota.">
+        <h3>Set de jugetes para mascotas<br><br>$299.99</h3>
+        <p>jugetes para que su mascota se divierta.</p>
+        <div class="actions">
+            <button onclick="window.location.href='pago.html'">Comprar Ahora</button>
+            <button onclick="addToCart('Set de jugetes para mascotas', 299.99, 'jugetess.jpg')">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="jugetesss.jpeg" alt="Jugete contenedor de alimento para su mascota.">
+        <h3>Jugete contenedor de alimento para mascotas<br><br>$150.00</h3>
+        <p>Jugete de alimeto para su mascota para que se entretenga mientras que usted hace alguna otra cosa o tarea del hogar.</p>
+        <div class="actions">
+            <button onclick="window.location.href='pago.html'">Comprar Ahora</button>
+            <button onclick="addToCart('Jugete contenedor de alimento para mascotas', 150.00, 'jugetesss.jpg')">Añadir al Carrito</button>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
